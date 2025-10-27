@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Chela+One&display=swap");
+
+:root {
+  --mexico-verde: #006847;
+  --secondary-color: #333;
+  --tertiary-color: #f5f5f5;
+}
+
+* {
+  margin: unset;
+  padding: unset;
+  font-family: "Chela One", sans-serif;
+  font-weight: 400;
+}
+
+#login {
+  .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    #form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      border: 2px solid var(--mexico-verde);
+      border-radius: 1rem;
+      padding: 20px;
+      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+      align-items: center;
+
+      img {
+        width: 200px;
+      }
+
+      h1 {
+        text-align: center;
+        color: var(--mexico-verde);
+      }
+
+      .inputs {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          min-width: 40ch;
+          border-radius: 1rem;
+          padding: 4px 8px;
+        }
+      }
+
+      .links {
+        a {
+          text-decoration: none;
+          text-align: center;
+          margin-top: 8px;
+          padding: 0 2rem;
+          color: var(--mexico-verde);
+        }
+      }
+      @media (min-width: 1024px) {
+        padding: 2rem;
+        font-size: 1.5rem;
+        .inputs {
+          input {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  padding: 0.4rem;
+  border-radius: 1rem;
+  background-color: var(--mexico-verde);
+  color: var(--tertiary-color);
+  border: 0;
+
+  @media (min-width: 1024px) {
+    font-size: 1.2rem;
+    border: 1px solid var(--mexico-verde);
+    background-color: var(--tertiary-color);
+    color: var(--mexico-verde);
+
+    &:hover {
+      background-color: var(--mexico-verde);
+      color: var(--tertiary-color);
+      transition: 0.3s ease-in-out;
+    }
+  }
+}

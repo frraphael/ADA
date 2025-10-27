@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receitas - Doña Florinda Restorant</title>
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="icon" href="/src/images/menu/logo.png" />
+    <script
+      src="https://kit.fontawesome.com/ff496e6e88.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="cabecalho">
+      <div class="logo">
+        <img src="/src/images/menu/logo.png" alt="Logo Dona Florinda" />
+        <h2>Doña Florinda</h2>
+      </div>
+
+      <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="menu" id="menu">
+          <li>
+            <div class="search-container">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar seção..."
+              />
+              <button onclick="searchAnchor()">Buscar</button>
+            </div>
+          </li>
+          <li><a download href="/src/documents/Livro_de_Receitas_Dona_Florinda.pdf">Baixar Receitas</a></li>
+          <li><a href="/index.html">Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="receitas">
+      <div class="container">
+        <h1>Livro de Receitas</h1>
+        <div id="receitas">
+          <div class="item" data-anchor="Pico de Gallo">
+            <div>
+              <h2>Pico de Gallo</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img
+                src="/src/images/menu/Entradas/pico-de-gallo.jpg"
+                alt="Pico de Gallo"
+              />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Tomate picado</li>
+                  <li>Cebola roxa picada</li>
+                  <li>Coentro fresco</li>
+                  <li>Suco de limão</li>
+                  <li>Sal</li>
+                  <li>Pimenta jalapeño</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>Misture todos os ingredientes em uma tigela.</li>
+                  <li>Tempere com sal e suco de limão.</li>
+                  <li>Deixe descansar por 10 minutos antes de servir.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Nachos">
+            <div>
+              <h2>Nachos</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img src="/src/images/menu/Entradas/nachos.png" alt="Nachos" />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Tortilhas de milho (em triângulos)</li>
+                  <li>Queijo cheddar ralado</li>
+                  <li>Jalapeños fatiados (opcional)</li>
+                  <li>Feijão preto (opcional)</li>
+                  <li>Sour cream</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>
+                    Distribua os nachos em uma assadeira, cubra com queijo e leve
+                    ao forno até derreter.
+                  </li>
+                  <li>Sirva com os acompanhamentos à parte.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Quesadillas">
+            <div>
+              <h2>Quesadillas</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img src="/src/images/menu/Entradas/quesadilla.png" alt="Quesadillas" />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Tortilhas de trigo ou milho</li>
+                  <li>Queijo ralado (cheddar, muçarela ou mistura)</li>
+                  <li>Frango desfiado ou carne (opcional)</li>
+                  <li>Cebola e pimentão (opcional)</li>
+                  <li>Azeite ou manteiga</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>Recheie metade da tortilha com os ingredientes.</li>
+                  <li>
+                    Dobre ao meio e grelhe dos dois lados até o queijo derreter e
+                    a tortilha dourar.
+                  </li>
+                  <li>Corte em triângulos e sirva quente.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Frango Frito">
+            <div>
+              <h2>Frango Frito</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img
+                src="/src/images/menu/Principais/frango-frito.jpg"
+                alt="Frango Frito"
+              />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Coxas ou sobrecoxas de frango</li>
+                  <li>Alho e cebola em pó</li>
+                  <li>Páprica picante</li>
+                  <li>Cominho</li>
+                  <li>Farinha de trigo</li>
+                  <li>Sal e pimenta</li>
+                  <li>Óleo para fritar</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>Tempere o frango com os condimentos.</li>
+                  <li>
+                    Passe na farinha temperada e frite em óleo quente até dourar.
+                  </li>
+                  <li>Escorra em papel toalha e sirva quente.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Enchiladas">
+            <div>
+              <h2>Enchiladas</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img src="/src/images/menu/Principais/enchiladas.jpg" alt="Enchiladas" />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Tortilhas de milho</li>
+                  <li>Frango desfiado ou carne moída</li>
+                  <li>Molho de tomate ou molho enchilada</li>
+                  <li>Queijo ralado</li>
+                  <li>Cebola (opcional)</li>
+                  <li>Creme azedo (para servir)</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>
+                    Recheie as tortilhas com carne, enrole e disponha em uma
+                    assadeira.
+                  </li>
+                  <li>Cubra com molho e queijo.</li>
+                  <li>Asse até gratinar.</li>
+                  <li>Sirva com creme azedo.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Tacos">
+            <div>
+              <h2>Tacos</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img src="/src/images/menu/Principais/tacos.jpg" alt="Tacos" />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Tortilhas de milho ou trigo</li>
+                  <li>Carne moída ou frango desfiado</li>
+                  <li>Cebola e alho</li>
+                  <li>Pimentão</li>
+                  <li>Alface picada</li>
+                  <li>Queijo ralado</li>
+                  <li>Molho de pimenta ou pico de gallo</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>Refogue a carne com alho, cebola e pimentão.</li>
+                  <li>
+                    Aqueça as tortilhas, recheie com a carne e os acompanhamentos.
+                  </li>
+                  <li>Sirva com molho à parte.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Burritos">
+            <div>
+              <h2>Burritos</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img src="/src/images/menu/Principais/burritos.jpg" alt="Burritos" />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Tortilhas de trigo grandes</li>
+                  <li>Arroz cozido</li>
+                  <li>Feijão preto ou refrito</li>
+                  <li>Carne moída ou frango desfiado</li>
+                  <li>Queijo ralado</li>
+                  <li>Alface, tomate e cebola</li>
+                  <li>Molho de pimenta ou guacamole</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>
+                    Recheie a tortilha com os ingredientes, dobre as laterais e
+                    enrole firmemente.
+                  </li>
+                  <li>Aqueça em uma frigideira para selar.</li>
+                  <li>Sirva quente com molho à parte.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Chilli com Carne">
+            <div>
+              <h2>Chilli com Carne</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img
+                src="/src/images/menu/Principais/chilli-com-carne.jpg"
+                alt="Chilli com Carne"
+              />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Carne moída</li>
+                  <li>Feijão vermelho ou preto cozido</li>
+                  <li>Tomate pelado ou molho de tomate</li>
+                  <li>Cebola e alho</li>
+                  <li>Cominho, páprica e pimenta chili</li>
+                  <li>Sal e azeite</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>
+                    Refogue cebola e alho, adicione a carne e cozinhe até dourar.
+                  </li>
+                  <li>Junte os temperos, tomate e feijão.</li>
+                  <li>Cozinhe em fogo baixo por 30 minutos.</li>
+                  <li>Sirva quente.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Churros">
+            <div>
+              <h2>Churros</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img src="/src/images/menu/Sobremesas/churros.jpg" alt="Churros" />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Farinha de trigo</li>
+                  <li>Água</li>
+                  <li>Manteiga</li>
+                  <li>Açúcar</li>
+                  <li>Sal</li>
+                  <li>Óleo para fritar</li>
+                  <li>Açúcar e canela (para polvilhar)</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>Ferva água com manteiga, açúcar e sal.</li>
+                  <li>Adicione a farinha e misture até formar uma massa.</li>
+                  <li>
+                    Modele os churros, frite em óleo quente e polvilhe com açúcar
+                    e canela.
+                  </li>
+                  <li>Sirva com doce de leite ou chocolate.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Capirotadas">
+            <div>
+              <h2>Capirotadas</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img
+                src="/src/images/menu/Sobremesas/capirotada.jpg"
+                alt="Capirotadas"
+              />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Pão amanhecido (em fatias)</li>
+                  <li>Açúcar mascavo (piloncillo)</li>
+                  <li>Canela e cravo</li>
+                  <li>Frutas secas (passas, damasco)</li>
+                  <li>Queijo ralado</li>
+                  <li>Nozes ou amendoim</li>
+                  <li>Água</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>Ferva o açúcar com especiarias para fazer a calda.</li>
+                  <li>Monte camadas de pão, frutas e queijo em uma assadeira.</li>
+                  <li>Regue com a calda e asse até dourar.</li>
+                  <li>Sirva morno ou frio.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Marranitos">
+            <div>
+              <h2>Marranitos</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img src="/src/images/menu/Sobremesas/marranitos.jpg" alt="Marranitos" />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Farinha de trigo</li>
+                  <li>Piloncillo (açúcar mascavo mexicano)</li>
+                  <li>Manteiga ou banha</li>
+                  <li>Ovos</li>
+                  <li>Canela em pó</li>
+                  <li>Fermento em pó</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>Derreta o piloncillo com um pouco de água.</li>
+                  <li>
+                    Misture com os demais ingredientes até formar uma massa.
+                  </li>
+                  <li>
+                    Modele os biscoitos em formato de porquinho e asse até dourar.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Arroz Mexicano">
+            <div>
+              <h2>Arroz Mexicano</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img
+                src="/src/images/menu/Guarnicoes/arroz-mexicano.jpg"
+                alt="Arroz Mexicano"
+              />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Arroz branco</li>
+                  <li>Tomate picado ou molho de tomate</li>
+                  <li>Cebola e alho</li>
+                  <li>Caldo de legumes ou água</li>
+                  <li>Óleo</li>
+                  <li>Sal</li>
+                  <li>Ervilhas</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>Refogue o arroz com alho e cebola.</li>
+                  <li>Adicione o tomate e o caldo.</li>
+                  <li>Cozinhe até o arroz ficar macio e o líquido secar.</li>
+                  <li>Acrescente legumes, se desejar, e sirva quente.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Feijão Preto e Arroz">
+            <div>
+              <h2>Feijão Preto e Arroz</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img
+                src="/src/images/menu/Guarnicoes/feijão-preto-e-arroz.jpg"
+                alt="Feijão Preto e Arroz"
+              />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Arroz branco</li>
+                  <li>Feijão preto cozido</li>
+                  <li>Alho e cebola</li>
+                  <li>Azeite</li>
+                  <li>Sal</li>
+                  <li>Coentro</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>Refogue alho e cebola no azeite.</li>
+                  <li>Adicione o arroz e cozinhe com água e sal.</li>
+                  <li>
+                    Aqueça o feijão com temperos e sirva ao lado ou misturado ao
+                    arroz.
+                  </li>
+                  <li>Finalize com coentro, se desejar.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Guacamole">
+            <div>
+              <h2>Guacamole</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img src="/src/images/menu/Guarnicoes/guacamole.jpg" alt="Guacamole" />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Abacate maduro</li>
+                  <li>Suco de limão</li>
+                  <li>Cebola roxa picada</li>
+                  <li>Tomate picado</li>
+                  <li>Coentro fresco</li>
+                  <li>Sal</li>
+                  <li>Pimenta</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>Amasse o abacate e misture com os demais ingredientes.</li>
+                  <li>Ajuste o sal e o limão.</li>
+                  <li>Sirva imediatamente para preservar a cor e o frescor.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Margarita">
+            <div>
+              <h2>Margarita</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img src="/src/images/menu/Bebidas/margarita.jpg" alt="Margarita" />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Tequila (50 ml)</li>
+                  <li>Licor de laranja (como Cointreau ou Triple Sec – 25 ml)</li>
+                  <li>Suco de limão fresco (25 ml)</li>
+                  <li>Gelo</li>
+                  <li>Sal (para a borda do copo)</li>
+                  <li>Rodela de limão (para decorar)</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>Passe limão na borda do copo e mergulhe no sal.</li>
+                  <li>
+                    Em uma coqueteleira, misture tequila, licor, suco de limão e
+                    gelo.
+                  </li>
+                  <li>Agite bem, coe e sirva no copo decorado.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Paloma">
+            <div>
+              <h2>Paloma</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img src="/src/images/menu/Bebidas/paloma.jpg" alt="Paloma" />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>Tequila (50 ml)</li>
+                  <li>Suco de limão (15 ml)</li>
+                  <li>Refrigerante de grapefruit (ou suco + água com gás)</li>
+                  <li>Gelo</li>
+                  <li>Sal (para a borda do copo)</li>
+                  <li>Rodela de limão ou grapefruit (para decorar)</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>Passe limão na borda do copo e mergulhe no sal.</li>
+                  <li>Adicione tequila, suco de limão e gelo.</li>
+                  <li>Complete com refrigerante de grapefruit.</li>
+                  <li>Misture suavemente e decore com uma rodela de fruta.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Licuado">
+            <div>
+              <h2>Licuado</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img src="/src/images/menu/Bebidas/liquado.jpeg" alt="Licuado" />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>1 banana madura</li>
+                  <li>100g de frutas vermelhas</li>
+                  <li>200 ml de leite</li>
+                  <li>1 colher (sopa) de mel (opcional)</li>
+                  <li>Gelo a gosto</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>
+                    Bata todos os ingredientes no liquidificador até ficar
+                    homogêneo.
+                  </li>
+                  <li>Sirva gelado.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-anchor="Suco de frutas da estação">
+            <div>
+              <h2>Suco de frutas da estação</h2>
+              <hr />
+            </div>
+            <div class="receita">
+              <img
+                src="/src/images/menu/Bebidas/sucos.jpg"
+                alt="Suco de frutas da estação"
+              />
+              <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                  <li>1 laranja</li>
+                  <li>½ manga</li>
+                  <li>200 ml de água gelada</li>
+                  <li>Açúcar ou mel (opcional)</li>
+                </ul>
+              </div>
+              <div class="preparo">
+                <h3>Modo de preparo</h3>
+                <ol>
+                  <li>Bata tudo no liquidificador.</li>
+                  <li>Coe se preferir.</li>
+                  <li>Sirva gelado.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="rodape">
+      <p><i class="fa-solid fa-clock"></i> Das 11h as 23h</p>
+      <p><i class="fa-solid fa-phone"></i> (11) 5588-0364</p>
+      <p>
+        <i class="fa-solid fa-envelope-open"></i>
+        donaflorinda@restaurante.com.br
+      </p>
+      <p>
+        <i class="fa-solid fa-location-dot"></i> Rua das couves, 235 - São
+        Paulo/SP
+      </p>
+    </footer>
+
+    <script src="/src/js/script.js"></script>
+  </body>
+</html>

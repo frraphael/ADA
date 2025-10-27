@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dona Florinda</title>
+  <link rel="stylesheet" href="/src/css/styles.css" />
+  <link rel="icon" href="/src/images/logo.png" />
+  <script src="https://kit.fontawesome.com/ff496e6e88.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="cabecalho">
+    <div class="logo">
+      <img src="/src/images/logo.png" alt="Logo Dona Florinda" />
+      <h2>Dona Florinda</h2>
+    </div>
+
+    <nav class="navbar">
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="menu" id="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#prato-do-dia">Sugestões do dia</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#reserva">Reservas</a></li>
+        <li><a href="#rodape">Contato</a></li>
+        <li><a href="/login.html">Receitas da Florinda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="conteudo">
+      <div>
+        <h2>❝Vamos, Tesouro,</h2>
+        <h3>não se misture com essa gentalha!❞</h3>
+      </div>
+      <a href="#cardapio">SIM, MAMÃE</a>
+    </div>
+  </section>
+
+
+  <div class="container">
+
+    <div id="hero2">
+      <h2>❝Que milagre o senhor por aqui!</h2>
+      <h3>Não vai reservar uma mesinha pra tomar um café?❞</h3>
+      <a href="#reserva">
+        <div class="btn-conteudo">
+          <img src="/src/images/Icones/table.svg" alt="Icone de reserva de mesa">
+          <p>PRIEMIRO A SENHORA</p>
+        </div>
+      </a>
+    </div>
+
+    <section id="prato-do-dia">
+      <div class="banner">
+        <h2>Sugestão do dia</h2>
+        <hr />
+        <h2>#SEXTOU</h2>
+        <div class="sugestao">
+          <div class="item">
+            <div class="descricao">
+              <h3>Hoje é dia de Menu Especial do Chapolim!</h3>
+              <p>
+                Corajoso, divertido e cheio de personalidade — um cardápio vibrante com pratos mexicanos autênticos e um
+                toque picante de aventura.
+              </p>
+              <ul>
+                <li><b>Entrada: </b>Pico de gallo</li>
+                <li>
+                  <b>Prato Principal: </b>Tacos de frango com arroz mexicano
+                </li>
+                <li><b>Sobremesas: </b>Churros com recheio de cajeta</li>
+                <li><b>Bebida: </b>Suco de abacaxi com hortelã</li>
+              </ul>
+              <h3>R$ 37,00</h3>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/src/images/Menu/tacos-arroz.webp" alt="Tacos com Arroz" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="cardapio">
+      <div class="opcoes">
+        <div class="opcao">
+          <h2>Entradas</h2>
+          <hr />
+          <div class="pratos">
+            <div class="prato">
+              <img src="/src/images/menu/entradas/pico-de-gallo.jpg" alt="Pico de gallo" />
+              <h3>Pico de gallo</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Pico de gallo" data-image="/src/images/menu/entradas/pico-de-gallo.jpg"
+                data-description="Clássico da culinária mexicana, o pico de gallo é uma mistura fresca e crocante de vegetais picados, ideal para acompanhar tacos, nachos ou como salada. Refrescante e cheio de sabor."
+                data-value="R$ 8,90">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+            <div class="prato">
+              <img src="/src/images/menu/entradas/nachos.png" alt="Nachos" />
+              <h3>Nachos</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Nachos" data-image="/src/images/menu/entradas/nachos.png"
+                data-description="Petisco mexicano crocante e versátil, os nachos são tortilhas de milho assadas ou fritas, geralmente cobertas com queijo derretido e acompanhamentos variados. Perfeitos para compartilhar."
+                data-value="R$ 8,90">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+            <div class="prato">
+              <img src="/src/images/menu/entradas/quesadilla.png" alt="Quesadillas" />
+              <h3>Quesadillas</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Quesadillas" data-image="/src/images/menu/entradas/quesadilla.png"
+                data-description="Quesadillas são tortilhas recheadas com queijo e outros ingredientes, dobradas e grelhadas até ficarem douradas e crocantes. São rápidas de preparar e muito saborosas."
+                data-value="R$ 8,90">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="opcao">
+          <h2>Pratos Principais</h2>
+          <hr />
+          <div class="pratos">
+            <div class="prato">
+              <img src="/src/images/menu/principais/frango-frito.jpg" alt="Frango Frito" />
+              <h3>Frango Frito</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Frango Frito" data-image="/src/images/menu/principais/frango-frito.jpg"
+                data-description="Crocante por fora e suculento por dentro, o frango frito mexicano é temperado com especiarias marcantes e servido com molhos picantes. Uma explosão de sabor em cada mordida."
+                data-value="R$16,20">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+            <div class="prato">
+              <img src="/src/images/menu/principais/enchiladas.jpg" alt="Enchiladas" />
+              <h3 class="especial">Enchiladas</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Enchiladas" data-image="/src/images/menu/principais/enchiladas.jpg"
+                data-description="Enchiladas são tortilhas recheadas, enroladas e cobertas com molho picante e queijo. Assadas até ficarem gratinadas, são um prato reconfortante e cheio de sabor mexicano."
+                data-value="R$16,20" data-link="enchiladas">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+            <div class="prato">
+              <img src="/src/images/menu/principais/tacos.jpg" alt="Tacos" />
+              <h3>Tacos</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Tacos" data-image="/src/images/menu/principais/tacos.jpg"
+                data-description="Tacos são um dos pratos mais emblemáticos do México: tortilhas recheadas com carne, vegetais e molhos, combinando crocância, sabor e praticidade. Perfeitos para qualquer ocasião."
+                data-value="R$16,20">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+            <div class="prato">
+              <img src="/src/images/menu/principais/burritos.jpg" alt="Burritos" />
+              <h3>Burritos</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Burritos" data-image="/src/images/menu/principais/burritos.jpg"
+                data-description="Burritos são tortilhas grandes recheadas com uma combinação de carne, arroz, feijão e vegetais, enroladas como um pacote. São completos, práticos e muito saborosos."
+                data-value="R$16,20">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+            <div class="prato">
+              <img src="/src/images/menu/principais/chilli-com-carne.jpg" alt="Chilli com carne" />
+              <h3>Chilli com carne</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Chilli com carne"
+                data-image="/src/images/menu/principais/chilli-com-carne.jpg"
+                data-description="Chilli com carne é um ensopado picante e encorpado feito com carne moída, feijão e tomates, temperado com especiarias intensas. Um prato reconfortante e cheio de personalidade."
+                data-value="R$16,20">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="opcao">
+          <h2>Sobremesas</h2>
+          <hr />
+          <div class="pratos">
+            <div class="prato">
+              <img src="/src/images/menu/sobremesas/churros.jpg" alt="Churros (Cajeta, Chocolate, Lechera)" />
+              <h3 class="especial">Churros (Cajeta, Chocolate, Lechera)</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Churros" data-image="/src/images/menu/sobremesas/churros.jpg"
+                data-description="Churros são doces fritos, crocantes por fora e macios por dentro, geralmente polvilhados com açúcar e canela. Podem ser servidos com doce de leite, chocolate ou outras coberturas."
+                data-value="R$6,75" data-link="churros">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+            <div class="prato">
+              <img src="/src/images/menu/sobremesas/capirotada.jpg" alt="Capirotadas" />
+              <h3>Capirotadas</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Capirotadas" data-image="/src/images/menu/sobremesas/capirotada.jpg"
+                data-description="Capirotadas são uma sobremesa tradicional mexicana semelhante a um pudim de pão, feita com pão torrado, frutas secas, queijo e uma calda de açúcar mascavo com especiarias. Rica em sabor e história."
+                data-value="R$6,75">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+            <div class="prato">
+              <img src="/src/images/menu/sobremesas/marranitos.jpg" alt="Marranitos" />
+              <h3>Marranitos</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Marranitos" data-image="/src/images/menu/sobremesas/marranitos.jpg"
+                data-description="Marranitos são biscoitos mexicanos tradicionais em formato de porquinho, feitos com açúcar mascavo (piloncillo) e especiarias. Têm sabor marcante, textura macia e são muito populares em padarias locais."
+                data-value="R$6,75">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="opcao">
+          <h2>Bebidas</h2>
+          <hr />
+          <div class="pratos">
+            <div class="prato">
+              <img src="/src/images/menu/Bebidas/margarita.jpg" alt="Margarita" />
+              <h3>Margarita</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Margarita" data-image="/src/images/menu/Bebidas/margarita.jpg"
+                data-description="A Margarita é um dos coquetéis mais icônicos do México, feita com tequila, suco de limão e licor de laranja. Refrescante, cítrica e levemente doce, é perfeita para acompanhar pratos mexicanos ou celebrar momentos especiais."
+                data-value="R$8,10">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+            <div class="prato">
+              <img src="/src/images/menu/bebidas/paloma.jpg" alt="Paloma" />
+              <h3>Paloma</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Paloma" data-image="/src/images/menu/bebidas/paloma.jpg"
+                data-description="A Paloma é um coquetel mexicano leve e refrescante, feito com tequila e refrigerante de grapefruit. Cítrica e levemente amarga, é uma excelente alternativa à Margarita e muito popular no México."
+                data-value="R$8,10">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+            <div class="prato">
+              <img src="/src/images/menu/bebidas/liquado.jpeg" alt="Licuado" />
+              <h3>Licuado</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Licuado" data-image="/src/images/menu/bebidas/liquado.jpeg"
+                data-description="Bebida cremosa e refrescante feita com banana e leite, perfeita para um lanche rápido e nutritivo."
+                data-value="R$8,10">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+            <div class="prato">
+              <img src="/src/images/menu/bebidas/sucos.jpg" alt="Suco da Estação" />
+              <h3 class="especial">Suco da Estação</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum consequatur consectetur
+                inventore illo voluptatem culpa dolor, id neque delectus?
+              </p>
+              <div class="botao" data-title="Suco da Estação" data-image="/src/images/menu/bebidas/sucos.jpg"
+                data-description="Bebida de frutas da estação. Sabores e cores podem variar de acordo com a opção..."
+                data-value="R$8,10" data-link="sucos">
+                <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+                <p>EU QUERO!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="reserva">
+      <h2>Faça sua reserva</h2>
+      <form action="" method="post">
+        <div class="formulario">
+          <label for="nome">Nome</label>
+          <input type="text">
+        </div>
+        <div class="formulario">
+          <label for="email">E-mail</label>
+          <input type="mail">
+        </div>
+        <div class="formulario">
+          <label for="data">Data</label>
+          <input type="datetime-local">
+        </div>
+        <button>Solicitar reserva</button>
+      </form>
+    </section>
+
+    <section id="sobre">
+      <h2>Vamos tesouro, não se misture com essa gentalha!</h2>
+      <hr />
+      <h3>“É isso, é isso, é isso!”</h3>
+      <p>
+        O suco é de limão, mas não é azedo como a Dona Florinda quando vê o Seu Madruga!
+        As panquecas? Supimpas! Com gostinho de frango frito que dá vontade de pedir mais.
+        E os churros... ah, os churros! Tem de leite, chocolate e doce de leite. Já falei que tem churros? Pois é, tem
+        churros!
+        Aqui no Restaurante Dona Florinda, cada dia tem um menu diferente, com combinações que até o Professor Girafales
+        ia querer repetir.
+        Peça o Menu do Chaves, o do Chapolin ou até o da Bruxa do 71 (mas não se assuste, é só no nome!).
+        E no fim de semana... tem happy hour para os adultos, porque ninguém é de ferro!
+      </p>
+      <h3>Corre, antes que eu diga: “Foi sem querer querendo!”</h3>
+    </section>
+
+  </div>
+
+  <footer id="rodape">
+    <p><i class="fa-solid fa-clock"></i> Das 11h as 23h</p>
+    <p><i class="fa-solid fa-phone"></i> (11) 5588-0364</p>
+    <p>
+      <i class="fa-solid fa-envelope-open"></i>
+      donaflorinda@restaurante.com.br
+    </p>
+    <p>
+      <i class="fa-solid fa-location-dot"></i> Rua das couves, 235 - São
+      Paulo/SP
+    </p>
+    <a href="login.html">Receitas da Florinda</a>
+  </footer>
+
+  <div id="modal">
+    <div class="modal">
+      <!-- <span class="close">&times;</span> -->
+      <span onclick="closeModal()">&times;</span>
+      <div class="modal-head">
+        <h2 id="title"></h2>
+      </div>
+      <div class="modal-body">
+        <div class="caixa">
+          <img src="" alt="" id="image" />
+        </div>
+        <div class="caixa">
+          <p id="content"></p>
+          <h3 id="value"></h3>
+          <div class="quantidade">
+            <div id="menos">-</div>
+            <input type="number" name="quantidade" id="quantidade" value="1">
+            <div id="mais">+</div>
+          </div>
+          <a href="#cardapio" class="pedir" onclick="closeModal()">
+            <img src="/src/images/Icones/delivery.svg" alt="Imagem do carrinho de entrega">
+            <p>Adicionar a cesta</p>
+          </a>
+        </div>
+      </div>
+      <div id="link"></div>
+    </div>
+  </div>
+  </div>
+
+  <script src="/src/js/script.js"></script>
+</body>
+
+</html>

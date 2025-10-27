@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Doña Florinda Restorant</title>
+    <link rel="stylesheet" href="/src/css/login.css">
+    <link rel="icon" href="/src/images/logo.png" />
+    <script src="https://kit.fontawesome.com/ff496e6e88.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main id="login">
+        <div class="login">
+            <div id="form">
+                <img src="/src/images/logo.png" alt="Florinda Logo">
+                <h1>Receitas da Florinda</h1>
+                <p id="mensagem"></p>
+                <div class="inputs">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" id="usuario">
+                </div>
+                <div class="inputs">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+                <div class="inputs links">
+                    <button class="btn" onclick="entrar()">Entrar <i class="fa-solid fa-right-to-bracket"></i></button>
+                    <a href="index.html">Voltar</a>
+                </div>
+            </div id="form">
+        </div>
+        <script src="/src/js/login.js"></script>
+    </main>
+</body>
+</html>

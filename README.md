@@ -1,8 +1,13 @@
 # ![Logo Dona Florinda](/src/images/Dona_Florinda.png)
 
 ## Integrantes
+<<<<<<< HEAD
 Raphael Ribeiro C161262
 Rosali Gouveia C161266
+=======
+**Raphael Ribeiro C161262**
+**Rosali Gouveia C161266**
+>>>>>>> 8293f8648fe1af4ff413c57a68ed59d12424a2c7
 
 ## Site
 **Dona Florinda** é uma página de restaurante com cardápio completo, modal com descrição detalhada dos itens, página exclusiva para pratos especiais, cadastro de reservas e uma seção reservada com as receitas do site.
